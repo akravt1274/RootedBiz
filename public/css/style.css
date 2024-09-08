@@ -1,0 +1,29 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(34,114,195);
+  background: linear-gradient(0deg, rgba(34,114,195,1) 0%, rgba(45,253,176,1) 100%);
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #4396eb !important;
+}
+
+.figure-img {
+  width: 420px;
+  height: 300px;
+}
+
+.popup {
+  display: none; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

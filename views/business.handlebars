@@ -1,0 +1,27 @@
+{{#if business}}
+<div class="container p-2">
+  <div class="row justify-content-around mt-4">
+    <div class="col-6 text-center">
+      <h3 class="text-center text-muted m-4">{{business.name}}</h3>
+      <p>{{business.description}}</p>
+    </div>
+    <div class="col-6 text-center">
+      <h3 class="text-center text-muted m-4">Address</h3>
+        <p>{{business.address}}</p>
+        <div id="map" style="height: 500px"></div>      
+    </div>
+  </div> 
+</div>
+
+<script>
+  const businessAddress = "{{business.address}}";
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0j6P6NzibTbN6mW0njzZBADZxIV72TWE&callback=initMap" async defer></script>
+<script src="/js/maps.js"></script>
+{{else}}
+<div class="text-center">No details found</div>
+{{/if}}
+
+

@@ -1,0 +1,24 @@
+<div class="row text-center">
+    <h3 class="text-center text-muted m-4"> Supporting Your Neighbors, Supporting Your Community!
+    </h3>
+</div>
+{{#if businesses.length}}
+<div class="container p-2">
+    <div class="row justify-content-around mt-4">        
+        <div class="col-6 text-center">
+            <img src="/assets/logo.png" alt="blog-image" class="img-fluid" style="height:450px;">
+        </div>
+        <div class="col-6">
+            {{#each businesses as |business| }}
+                <div class="py-2 text-center">
+                    <a href="/api/business/{{business.id}}" class="btn btn-light btn-block" type="button">{{business.name}}</a>
+                </div>
+            {{/each}}
+        </div>
+        {{else}}
+        <div class="row text-center">
+            <h5 class="text-center text-muted m-4"> No businesses available.
+            </h5>
+        </div>
+    </div>    
+{{/if}}
