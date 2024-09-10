@@ -22,6 +22,12 @@ Business.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    img_url: {
+      type: DataTypes.STRING,
+    },
+    url: {
+      type: DataTypes.STRING,
+    },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,

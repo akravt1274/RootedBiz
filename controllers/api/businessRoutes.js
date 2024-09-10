@@ -6,7 +6,7 @@ const helpers = require('../../utils/helpers');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const { category, name, description, address } = req.body;  
+    const { category, name, description, address, url, img_url } = req.body;  
     const categoryData = await Category.findOne(
       {
         where: { name: category },       
@@ -15,6 +15,8 @@ router.post('/', withAuth, async (req, res) => {
         name,        
         description,
         address,
+        url,
+        img_url,
         date_created: new Date(),
         user_id: req.session.user_id,
         category_id: categoryData.id,

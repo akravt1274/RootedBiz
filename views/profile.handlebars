@@ -5,9 +5,10 @@
 <div class="container p-2">
   <div class="row justify-content-around">
     <div class="col-5">
-      <h3 class="mb-4"><small class="text-muted">Add Your Local Business</small></h3>      
-
-      <form class="new-project-form">
+      <h3 class="mb-4">
+        <small class="text-muted">Add Your Local Business</small>
+      </h3> 
+      <form class="new-project-form mb-2">
         <div class="mb-2">
           <select class="form-select form-select-sm" name="category" id="project-category">
             <option selected>Select a category</option>
@@ -16,7 +17,7 @@
             <option value="Service">Service</option>
             <option value="Entertainment">Entertainment</option>
           </select>
-        </div>
+        </div>        
         <div class="mb-2">
           <label for="project-name" class="form-label text-muted">Business Name:</label>
           <input class="form-control p-0" type="text" id="project-name" name="project-name">
@@ -28,6 +29,14 @@
         <div class="mb-2">
           <label for="project-address" class="form-label text-muted">Address</label>
           <input class="form-control p-0" type="text" id="project-address" name="address">
+        </div>
+        <div class="mb-2">
+          <label for="img-url" class="form-label text-muted">Image URL</label>
+          <input class="form-control p-0" type="text" id="img-url" name="img-url">
+        </div>
+        <div class="mb-2">
+          <label for="url" class="form-label text-muted">Business URL</label>
+          <input class="form-control p-0" type="text" id="url" name="url">
         </div>
         <div class="text-center">
           <button type="submit" class="btn btn-light px-4 py-2">Create</button>
