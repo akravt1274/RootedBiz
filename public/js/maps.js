@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  if (typeof projectAddress !== 'undefined') {
-    geocodeAddress(projectAddress);
+  if (typeof businessAddressAddress !== 'undefined') {
+    geocodeAddress(businessAddress);
   } else {
     initMap({ lat: 41.8919, lng: -87.610168 });
   }

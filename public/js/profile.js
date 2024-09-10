@@ -2,10 +2,10 @@
   const newFormHandler = async (event) => {
     event.preventDefault();
 
-    const category = document.querySelector('#project-category').value;
-    const name = document.querySelector('#project-name').value.trim();    
-    const description = document.querySelector('#project-desc').value.trim();
-    const address = document.querySelector('#project-address').value.trim();
+    const category = document.querySelector('#business-category').value;
+    const name = document.querySelector('#business-name').value.trim();    
+    const description = document.querySelector('#business-desc').value.trim();
+    const address = document.querySelector('#business-address').value.trim();
 
     if (name && address && description && category) {
       const response = await fetch('/api/business', {

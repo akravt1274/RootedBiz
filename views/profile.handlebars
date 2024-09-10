@@ -7,9 +7,9 @@
     <div class="col-5">
       <h3 class="mb-4"><small class="text-muted">Add Your Local Business</small></h3>      
 
-      <form class="new-project-form">
+      <form class="new-business-form">
         <div class="mb-2">
-          <select class="form-select form-select-sm" name="category" id="project-category">
+          <select class="form-select form-select-sm" name="category" id="business-category">
             <option selected>Select a category</option>
             <option value="Restaurant">Restaurant</option>
             <option value="Retail">Retail</option>
@@ -18,16 +18,16 @@
           </select>
         </div>
         <div class="mb-2">
-          <label for="project-name" class="form-label text-muted">Business Name:</label>
-          <input class="form-control p-0" type="text" id="project-name" name="project-name">
+          <label for="business-name" class="form-label text-muted">Business Name:</label>
+          <input class="form-control p-0" type="text" id="business-name" name="business-name">
         </div>
         <div class="mb-2">
-          <label for="project-desc" class="form-label text-muted">Description:</label>
-          <textarea class="form-control p-0" id="project-desc" name="project-desc"></textarea>
+          <label for="business-desc" class="form-label text-muted">Description:</label>
+          <textarea class="form-control p-0" id="business-desc" name="business-desc"></textarea>
         </div>        
         <div class="mb-2">
-          <label for="project-address" class="form-label text-muted">Address</label>
-          <input class="form-control p-0" type="text" id="project-address" name="address">
+          <label for="business-address" class="form-label text-muted">Address</label>
+          <input class="form-control p-0" type="text" id="business-address" name="address">
         </div>
         <div class="text-center">
           <button type="submit" class="btn btn-light px-4 py-2">Create</button>
@@ -38,7 +38,7 @@
     <div class="col-2"></div>
 
     {{#if businesses.length}}
-    <div class="col-5 project-list">
+    <div class="col-5 business-list">
       <h3 class="mb-4"><small class="text-muted">Current Businesses</small></h3>
   
       {{#each businesses as |business|}}

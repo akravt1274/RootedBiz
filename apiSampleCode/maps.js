@@ -25,6 +25,27 @@ function initMap(location) {
   });
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // fetch("/api/projects")
 //   .then((response) => response.json())
 //   .then((projects) => {

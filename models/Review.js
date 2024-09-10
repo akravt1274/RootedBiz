@@ -30,10 +30,10 @@ Review.init(
         key: 'id',
       },
     },
-    project_id: {  
+    business_id: {  
       type: DataTypes.INTEGER,
       references: {
-        model: 'project', 
+        model: 'business', 
         key: 'id',
       },
     },
