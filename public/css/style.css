@@ -10,6 +10,7 @@ body {
 
 .navbar {
   background-color: #4396eb !important;
+  height: 50px;
 }
 
 .figure-img {
@@ -26,4 +27,30 @@ body {
   background-color: white;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+ 
+}
+
+.footerLogo {
+  height: 50px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.headerLogo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
 }
