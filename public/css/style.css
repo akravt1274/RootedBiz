@@ -27,3 +27,36 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* source - https://www.geeksforgeeks.org/star-rating-using-html-css-and-javascript/
+*/
+
+.rating {
+max-width: 10rem;
+width: 100%;
+}
+
+.star {
+font-size: 2vh;
+cursor: pointer;
+}
+
+.one {
+color: rgb(255, 0, 0);
+}
+
+.two {
+color: rgb(255, 106, 0);
+}
+
+.three {
+color: rgb(251, 255, 120);
+}
+
+.four {
+color: rgb(255, 255, 0);
+}
+
+.five {
+color: rgb(24, 159, 14);
+}

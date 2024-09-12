@@ -28,6 +28,9 @@ Business.init(
     url: {
       type: DataTypes.STRING,
     },
+    rating: {
+      type: DataTypes.INTEGER,
+    },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -45,7 +48,6 @@ Business.init(
       references: {
         model: 'category',
         key: 'id',
-        // unique: false
       }
     }
   },

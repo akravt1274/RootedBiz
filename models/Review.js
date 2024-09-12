@@ -11,13 +11,11 @@ Review.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    content: {
+    comment: {
       type: DataTypes.TEXT,
-      allowNull: false,
     },
     rating: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       validate: {
         min: 1,
         max: 5,
@@ -30,10 +28,10 @@ Review.init(
         key: 'id',
       },
     },
-    project_id: {  
+    business: {  
       type: DataTypes.INTEGER,
       references: {
-        model: 'project', 
+        model: 'business', 
         key: 'id',
       },
     },
