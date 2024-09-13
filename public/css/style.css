@@ -50,13 +50,40 @@ color: rgb(255, 106, 0);
 }
 
 .three {
+color: rgb(157, 14, 159);
+}
+
+.four {  
 color: rgb(251, 255, 120);
 }
 
-.four {
-color: rgb(255, 255, 0);
+.five {
+  color: rgb(255, 255, 0);
 }
 
-.five {
-color: rgb(24, 159, 14);
+@media(max-width: 600px) {
+    .media {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .media img {
+      height: 200px !important;
+      width: 200px;
+    }
+
+    .media h3 {
+      margin: 0 !important;
+    }
+
+    .media-category {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .media-category img {
+      display: none;
+    }
 }
