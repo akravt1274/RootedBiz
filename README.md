@@ -54,7 +54,7 @@ Business details page provides user with business description, allows to view th
 ![alt text](public/assets/image-2.png)
 
 ## Review
-The URL of the functional, deployed application: 
+The URL of the functional, deployed application: https://rootedbiz-k658.onrender.com
 
 The URL of the GitHub repository: https://github.com/akravt1274/RootedBiz
 
