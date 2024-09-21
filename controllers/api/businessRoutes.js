@@ -11,11 +11,12 @@ router.post('/', withAuth, async (req, res) => {
     let _url = '';
 
     if (url.includes('http') || url.includes('www')) {      
-      return _url = url;
+      console.log('url', url);
+      _url = url;
     }
         
     _url = "https://".concat(url);    
-    console.log('_url', _url);
+    //console.log('_url', _url);
     
     const categoryData = await Category.findOne(
       {
