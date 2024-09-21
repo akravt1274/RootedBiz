@@ -7,6 +7,15 @@ const helpers = require('../../utils/helpers');
 router.post('/', withAuth, async (req, res) => {
   try {
     const { category, name, description, address, url, img_url, rating } = req.body;  
+    if (url.includes('http') || url.includes('www')) {
+      return;
+    }
+    else {
+      const https = "https://";
+      url = https.concat(url);
+      // console.log('url', url);
+    }
+
     const categoryData = await Category.findOne(
       {
         where: { name: category },       

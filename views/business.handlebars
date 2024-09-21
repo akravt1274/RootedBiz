@@ -10,9 +10,11 @@
       {{#if business.url}}
       <a href="{{business.url}}" class="btn btn-link" target="_blank" type="button">{{business.url}}</a>
       {{/if}}
+      {{#if business.img_url}}
       <div>
         <img src="{{business.img_url}}" alt="url-image" class="img-fluid" style="height:150px;">
       </div>      
+      {{/if}}
       <div>
         <span onclick="ratingHandler(1, {{business.id}})" class="star">★
         </span>
