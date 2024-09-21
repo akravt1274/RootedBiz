@@ -9,30 +9,10 @@
             <img src="/assets/logo.png" alt="blog-image" class="img-fluid" style="height:450px;">
         </div>
         <div class="col-6">
-            {{#each businesses as |business| }}          
-            {{!-- {{#if business.rating}}    
-            <script>
-                function displayRating() {
-                    console.log({{ business.rating }});
-                    setRating({{business.rating}});
-                };
-            </script>             
-            {{/if}} --}}
+            {{#each businesses as |business| }}             
             <div class="row align-items-center mb-4 media-category"> 
                 <div class="col-8 text-center">                    
-                    <a href="/api/business/{{business.id}}" class="btn btn-light btn-block media-category" type="button">{{business.name}}</a>
-                    {{!-- <div>
-                        <span onclick="ratingHandler(1, {{business.id}})" class="star">★
-                        </span>
-                        <span onclick="ratingHandler(2, {{business.id}})" class="star">★
-                        </span>
-                        <span onclick="ratingHandler(3, {{business.id}})" class="star">★
-                        </span>
-                        <span onclick="ratingHandler(4, {{business.id}})" class="star">★
-                        </span>
-                        <span onclick="ratingHandler(5, {{business.id}})" class="star">★
-                        </span>
-                    </div> --}}
+                    <a href="/api/business/{{business.id}}" class="btn btn-light btn-block media-category" type="button">{{business.name}}</a>                    
                 </div>
                 <div class="col-4">
                     <img src="{{business.img_url}}" alt="url-image" class="img-fluid media-category" style="height:100px;">
@@ -42,8 +22,7 @@
         </div>
         {{else}}
         <div class="row text-center">
-            <h5 class="text-center text-muted m-4"> No businesses available.
-            </h5>
+            <h5 class="text-center text-muted m-4"> No businesses available.</h5>
         </div>
     </div>    
 {{/if}}

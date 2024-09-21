@@ -7,7 +7,9 @@
     <div class="col-6 text-center">
       <h3 class="text-center text-muted m-4">{{business.name}}</h3>
       <p>{{business.description}}</p>
+      {{#if business.url}}
       <a href="{{business.url}}" class="btn btn-link" target="_blank" type="button">Visit Website</a>
+      {{/if}}
       <div>
         <img src="{{business.img_url}}" alt="url-image" class="img-fluid" style="height:150px;">
       </div>      

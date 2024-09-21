@@ -19,15 +19,15 @@
           </select>
         </div>        
         <div class="mb-2">
-          <label for="project-name" class="form-label text-muted">Business Name:</label>
+          <label for="project-name" class="form-label text-muted">*Business Name</label>
           <input class="form-control p-0" type="text" id="project-name" name="project-name">
         </div>
         <div class="mb-2">
-          <label for="project-desc" class="form-label text-muted">Description:</label>
+          <label for="project-desc" class="form-label text-muted">Description</label>
           <textarea class="form-control p-0" id="project-desc" name="project-desc"></textarea>
         </div>        
         <div class="mb-2">
-          <label for="project-address" class="form-label text-muted">Address</label>
+          <label for="project-address" class="form-label text-muted">*Address</label>
           <input class="form-control p-0" type="text" id="project-address" name="address">
         </div>
         <div class="mb-2">
@@ -38,7 +38,8 @@
           <label for="url" class="form-label text-muted">Business URL</label>
           <input class="form-control p-0" type="text" id="url" name="url">
         </div>
-        <div class="text-center">
+        <div class="text-center">          
+          <p id="error-msg" class="text-danger"></p>
           <button type="submit" class="btn btn-light px-4 py-2">Create</button>
         </div>
       </form>
@@ -56,6 +57,7 @@
           <h4><a href="/api/business/{{business.id}}" class="link-secondary">{{business.name}}</a></h4>
         </div>
         <div class="col-md-4">
+          <p id="error-msg" class="text-danger"></p>
           <button type="submit" class="btn btn-link btn-sm p-0 text-danger" data-id="{{business.id}}">X</button>
         </div>
       </div>

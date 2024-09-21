@@ -41,10 +41,6 @@ router.put('/:id', async (req, res) => {
     // console.log('ratingData', ratingData.rating);
     // res.status(200).json(ratingData.rating);
     res.status(200).json({rating});
-    // res.render('business', {
-    //   business,
-    //   logged_in: req.session.logged_in,
-    // });
   } catch (err) {
     res.status(400).json(err);
   }

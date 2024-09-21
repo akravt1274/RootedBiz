@@ -19,7 +19,7 @@
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create business');
+        $('#error-msg').text('Failed to create business, please try again.');
       }
     };
   };
@@ -35,7 +35,7 @@ const delButtonHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to delete business');
+        $('#error-msg').text('Failed to delete business, please try again.');
       }
     }
   };
